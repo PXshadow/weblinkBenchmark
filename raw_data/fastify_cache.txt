@@ -1,0 +1,37 @@
+Running 5s test @ http://localhost:3000/big
+100 connections
+
+Stat         Avg    Stdev  Max
+Latency (ms) 43.17  10.65  133.9  
+Req/Sec      2283   372.72 2561   
+Bytes/Sec    388 MB 66 MB  437 MB 
+
+11k requests in 5s, 1.95 GB read
+Running 5s test @ http://localhost:3000/bigschema
+100 connections
+
+Stat         Avg    Stdev  Max
+Latency (ms) 38.77  5.23   86.07
+Req/Sec      2538.6 145.64 2652
+Bytes/Sec    428 MB 26 MB  453 MB
+
+13k requests in 5s, 2.17 GB read
+Running 5s test @ http://localhost:3000/small
+100 connections
+100 connections
+
+Stat         Avg   Stdev  Max
+Latency (ms) 4.04  1.77   57.57
+Req/Sec      22008 1091.9 22707
+Bytes/Sec    18 MB 734 kB 18.7 MB
+
+110k requests in 5s, 90.6 MB read
+Running 5s test @ http://localhost:3000/hello
+100 connections
+
+Stat         Avg    Stdev  Max
+Latency (ms) 4.06   1.88   57.37
+Req/Sec      22120  1028.3 22934
+Bytes/Sec    3.5 MB 153 kB 3.62 MB
+
+111k requests in 5s, 17.5 MB read

@@ -6,13 +6,13 @@ import weblink.Weblink;
 class Main {
 	static function main() {
 		//optimize minifier
+		final path = "frameworks-benchmark/data";
 		function min(string:String):Bytes
 		{
 			string = StringTools.replace(string," ","");
 			string = StringTools.replace(string,"\r\n","");
 			return Bytes.ofString(string);
 		}
-		final path = "frameworks-benchmark/data";
 		final dataBig = min(File.getContent('$path/dataBig.json'));
 		final dataSmall = min(File.getContent('$path/dataSmall.json'));
 		final hello = Bytes.ofString(Json.stringify({hello: "world"}));
