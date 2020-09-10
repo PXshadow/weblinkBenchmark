@@ -1,3 +1,4 @@
+import haxe.Timer;
 import haxe.io.Bytes;
 import haxe.Json;
 import sys.io.File;
@@ -14,10 +15,9 @@ class Main {
 		final path = "frameworks-benchmark/data";
 		final dataBig = min(File.getContent('$path/dataBig.json'));
 		final dataSmall = min(File.getContent('$path/dataSmall.json'));
-		final hello = Json.stringify({hello: "world"});
+		final hello = Bytes.ofString(Json.stringify({hello: "world"}));
 		//app
 		var app = new Weblink();
-		var i:Int = 0;
 		app.get(function(request,response)
 		{
 			response.contentType = "application/json; charset=utf-8";
@@ -28,7 +28,7 @@ class Main {
 				case "/small":
 				response.sendTextBytes(dataSmall);
 				case "/hello":
-				response.send(hello);
+				response.sendTextBytes(hello);
 			}
 		});
 		app.listen(3000);
