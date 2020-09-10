@@ -2,5 +2,3 @@
 -D analyzer-optimize
 -main Main
 -lib weblink
-#-D nolibuv
--hl app.hl
