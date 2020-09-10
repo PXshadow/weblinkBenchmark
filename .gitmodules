@@ -1,0 +1,4 @@
+[submodule "frameworks-benchmark"]
+    path = frameworks-benchmark
+    url = https://github.com/abenhamdine/frameworks-benchmark
+    branch = master
