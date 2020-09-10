@@ -31,8 +31,8 @@ Benchmarks
 
 |          | Requests/s | Latency | Throughput/Mb |
 | :--      | :-:        | --:     | --:           |
-| hl_libuv | 5314.0     | 75.11   | 889           |
-| fastify  | 1315.0     | 18.42   | 156           |
+| hl_libuv | 5314.0     | 18.42   | 889           |
+| fastify  | 1315.2     | 75.11   | 156           |
 
 ## small:
 
