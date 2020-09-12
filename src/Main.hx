@@ -1,4 +1,3 @@
-import haxe.Timer;
 import haxe.io.Bytes;
 import haxe.Json;
 import sys.io.File;
@@ -24,11 +23,11 @@ class Main {
 			switch (request.path)
 			{
 				case "/big" | "/bigschema":
-				response.sendTextBytes(dataBig);
+				response.sendBytes(dataBig);
 				case "/small":
-				response.sendTextBytes(dataSmall);
+				response.sendBytes(dataSmall);
 				case "/hello":
-				response.sendTextBytes(hello);
+				response.sendBytes(hello);
 			}
 		});
 		app.listen(3000);
