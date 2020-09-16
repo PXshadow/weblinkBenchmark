@@ -6,3 +6,5 @@ package-lock.json
 build
 *.exe
 *.png
+uwebsockets.js
+graph.txt
