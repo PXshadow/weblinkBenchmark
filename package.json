@@ -1,0 +1,17 @@
+{
+  "name": "frameworks-benchmark",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-perf-express": "autocannon -c 100 -d 5 localhost:3000/big && autocannon -c 100 -d 5 localhost:3000/small && autocannon -c 100 -d 5 localhost:3000/hello",
+    "test-perf-fastify": "autocannon -c 100 -d 5 localhost:3000/big && autocannon -c 100 -d 5 localhost:3000/bigschema && autocannon -c 100 -d 5 localhost:3000/small && autocannon -c 100 -d 5 localhost:3000/hello"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "autocannon": "^0",
+    "express": "4.17.1",
+    "fastify": "3.3.0",
+    "uws": "^10.0.0"
+  }
+}

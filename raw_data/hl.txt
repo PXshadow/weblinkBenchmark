@@ -1,36 +1,36 @@
 Running 5s test @ http://localhost:3000/big
 100 connections
 
-Stat         Avg    Stdev   Max
-Latency (ms) 83.25  6.88    102.64
-Req/Sec      1180   25.3    1200
-Bytes/Sec    195 MB 3.36 MB 201 MB
+Stat         Avg    Stdev  Max
+Latency (ms) 18.47  6      83.97
+Req/Sec      5305.8 784.09 6155
+Bytes/Sec    940 MB 145 MB 1.08 GB
 
-6k requests in 5s, 989 MB read
+27k requests in 5s, 4.67 GB read
 Running 5s test @ http://localhost:3000/bigschema
 100 connections
 
-Stat         Avg    Stdev   Max
-Latency (ms) 83.88  7.57    127.71
-Req/Sec      1180   40      1200
-Bytes/Sec    194 MB 6.71 MB 201 MB
+Stat         Avg    Stdev  Max
+Latency (ms) 18.17  5.99   86.48
+Req/Sec      5379.6 786.2  6177
+Bytes/Sec    946 MB 148 MB 1.09 GB
 
-6k requests in 5s, 989 MB read
+27k requests in 5s, 4.74 GB read
 Running 5s test @ http://localhost:3000/small
 100 connections
 
 Stat         Avg     Stdev   Max
-Latency (ms) 76.51   1.49    87.8
-Req/Sec      1285.2  39.46   1327
-Bytes/Sec    1.01 MB 38.2 kB 1.04 MB
+Latency (ms) 3.13    1.53    61.59
+Req/Sec      27908.8 1521.79 28827
+Bytes/Sec    23 MB   1.26 MB 23.9 MB
 
-6k requests in 5s, 5.04 MB read
+140k requests in 5s, 116 MB read
 Running 5s test @ http://localhost:3000/hello
 100 connections
 
-Stat         Avg    Stdev Max
-Latency (ms) 75.98  2.87  80.01
-Req/Sec      1300   0     1300
-Bytes/Sec    168 kB 0 B   165 kB
+Stat         Avg     Stdev   Max
+Latency (ms) 3.12    1.48    60.02
+Req/Sec      27931.2 1378.32 28665
+Bytes/Sec    3.53 MB 157 kB  3.64 MB
 
-7k requests in 5s, 826 kB read
+140k requests in 5s, 17.7 MB read

@@ -1,0 +1,55 @@
+[
+ {
+  "rows": [
+   [
+    "express",
+    771.2,
+    12570.4,
+    14520.8
+   ],
+   [
+    "fastify",
+    819.8,
+    17589.6,
+    20270.41
+   ],
+   [
+    "fastify_cache",
+    2283,
+    22008,
+    22120
+   ],
+   [
+    "hl",
+    1180,
+    1285.2,
+    1300
+   ],
+   [
+    "hl_libuv",
+    5309.4,
+    29732.8,
+    30094.4
+   ]
+  ],
+  "type": "table",
+  "columns": [
+   {
+    "text": "name",
+    "type": "string"
+   },
+   {
+    "text": "big",
+    "type": "number"
+   },
+   {
+    "text": "small",
+    "type": "number"
+   },
+   {
+    "text": "hello",
+    "type": "number"
+   }
+  ]
+ }
+]
