@@ -1,4 +1,4 @@
 -main UWebSockets
 -lib uwebsockets
 -lib hxnodejs
--js uwebsockets.js
+-js uwebsockets_haxe.js
